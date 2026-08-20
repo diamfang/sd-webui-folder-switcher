@@ -1,0 +1,194 @@
+/* Панель радиобаттонов */
+.folder-radio-group-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    background: rgba(17, 24, 39, 0.4);
+    border: 1px solid #374151;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.folder-radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 0.85em;
+    color: #d1d5db;
+    user-select: none;
+}
+
+.folder-radio-label:hover {
+    color: #ffffff;
+}
+
+/* Радиобаттон */
+.folder-radio-input {
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box !important;
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    border: 2px solid #6b7280 !important;
+    border-radius: 50% !important;
+    outline: none !important;
+    background-color: #111827 !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Граница при наведении */
+.folder-radio-input:hover {
+    border-color: #9ca3af !important;
+}
+
+/* Активное состояние (внешнее кольцо серым/чуть светлее, точка синяя) */
+.folder-radio-input:checked {
+    border-color: #3b82f6 !important;
+}
+
+.folder-radio-input:checked::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background-color: #2563eb !important; /* Синяя внутренняя точка */
+}
+
+.folder-radio-text {
+    font-weight: 500;
+}
+
+.folder-settings-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 2px;
+    margin-left: auto;
+    opacity: 0.7;
+}
+
+.folder-settings-icon-btn:hover {
+    opacity: 1;
+}
+
+/* МОДАЛЬНОЕ ОКНО НАСТРОЕК */
+.preset-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.preset-modal-content {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    width: 540px;
+    max-width: 90vw;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.preset-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+}
+
+.preset-modal-header h3 { margin: 0; color: #f3f4f6; font-size: 1.05em; }
+
+.preset-modal-close {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.preset-modal-close:hover { color: #fff; }
+
+.preset-modal-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.folder-select-input {
+    background: #0b0f17;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.85em;
+    outline: none;
+    cursor: pointer;
+}
+
+#folder-json-textarea {
+    width: 100%;
+    height: 200px;
+    background: #0b0f17;
+    color: #34d399;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 0.9em;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.preset-modal-footer {
+    padding: 12px 16px;
+    background: #1f2937;
+    border-top: 1px solid #374151;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scale-preset-btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #374151;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary { background-color: #2563eb; color: white; border-color: #3b82f6; }
+.btn-primary:hover { background-color: #1d4ed8; }
+
+.btn-secondary { background-color: #374151; color: white; }
+.btn-secondary:hover { background-color: #4b5563; }
+
+.btn-danger { background-color: #991b1b; color: white; border-color: #dc2626; }
+.btn-danger:hover { background-color: #7f1d1d; }
