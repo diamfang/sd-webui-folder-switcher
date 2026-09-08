@@ -30,7 +30,6 @@
 > [!WARNING]
 >This extension was tested only for Forge Neo. I cannot guarantee that it will work for Automatic1111 or Forge Classic.
 
-
-
 ## Credits
-* [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) by Haoming02
+* Made for [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) by Haoming02
+* Other plugin by me: [Smooth progress bar](https://github.com/diamfang/sd-webui-smooth-progress) by Diamfang
