@@ -32,4 +32,4 @@
 
 ## Credits
 * Made for [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) by Haoming02
-* Other plugin by me: [Smooth progress bar](https://github.com/diamfang/sd-webui-smooth-progress)
+* Other extension by me: [Smooth progress bar](https://github.com/diamfang/sd-webui-smooth-progress)
